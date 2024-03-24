@@ -27,7 +27,7 @@ const Docs = () => {
         <div className="mt-5">
           <h1 className="text-xl font-bold">Test Route</h1>
           <p className="text-sm">See if your internet is working 😉</p>
-          <pre className="bg-black mt-2 text-xs p-4 rounded text-gray-400">
+          <pre className="bg-black mt-2 text-xs p-4 rounded text-gray-400 overflow-x-scroll sm:overflow-visible">
             {`fetch('//jsonifyreact.vercel.app/api/products')
 .then((res) => res.json())
 .then((data) => console.log(data))
