@@ -1,9 +1,15 @@
 import { dataArray, dataArray2, dataArray3 } from "@/utils";
 import { StepForward } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
-const Docs = ({ children }: { children: React.ReactNode }) => {
+export const metadata: Metadata = {
+  title: "Docs",
+  description:
+    "Get dummy/fake JSON data to use as placeholder in development or in prototype testing",
+};
+const Docs = () => {
   return (
     <div className="mb-10">
       <div className="mb-4">

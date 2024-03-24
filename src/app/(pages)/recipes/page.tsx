@@ -1,7 +1,14 @@
 import { recipesArray } from "@/utils";
 import { SkipBack, StepForward } from "lucide-react";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
+
+export const metadata: Metadata = {
+  title: "Jsonify React - Recipes",
+  description:
+    "Get dummy/fake JSON data to use as placeholder in development or in prototype testing",
+};
 
 const Recipes = () => {
   return (

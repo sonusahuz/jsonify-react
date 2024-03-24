@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.get {
+  @apply bg-blue-400 text-white font-medium px-4 rounded mr-2;
+}
+
+.post {
+  @apply bg-green-400 text-white font-medium px-4 rounded mr-2;
+}
+
+.put {
+  @apply bg-orange-500 text-white font-medium px-4 rounded mr-2;
+}
+.delete {
+  @apply bg-red-500 text-white font-medium px-4 rounded mr-2;
+}

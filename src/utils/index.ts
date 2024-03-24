@@ -217,7 +217,7 @@ export const usersArray = [
     method: "GET",
     label: "Get all users",
     href: "/api/users",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/users')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -227,7 +227,7 @@ export const usersArray = [
     method: "GET",
     label: "Get a single user",
     href: "/api/users/1",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/users/1')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -237,7 +237,7 @@ export const usersArray = [
     method: "GET",
     label: "Search users",
     href: "/api/users/search?q=Sheldon",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/users/search?q=Sheldon')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -247,7 +247,7 @@ export const usersArray = [
     method: "GET",
     label: "Limit and Skip users",
     href: "/api/users?limit=10&skip=5",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/users?limit=10&skip=5')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -257,7 +257,7 @@ export const usersArray = [
     method: "POST",
     label: "Add a user",
     href: "/api/users",
-    className: "bg-green-500 text-white font-medium px-4 rounded mr-2",
+    className: "post",
     code: `fetch('//jsonifyreact.vercel.app/api/users', {
   method: 'POST',
   // Add body data here
@@ -270,7 +270,7 @@ export const usersArray = [
     method: "PUT",
     label: "Update a user",
     href: "/api/users/1",
-    className: "bg-orange-500 text-white font-medium px-4 rounded mr-2",
+    className: "put",
     code: `fetch('//jsonifyreact.vercel.app/api/users/1', {
   method: 'PUT',
   // Add body data here
@@ -282,7 +282,7 @@ export const usersArray = [
     id: "delete-a-user",
     method: "DELETE",
     label: "Delete a user",
-    className: "bg-red-600 text-white font-medium px-4 rounded mr-2",
+    className: "delete",
     href: "/api/users/1",
     code: `fetch('//jsonifyreact.vercel.app/api/users/1', {
   method: 'DELETE'
@@ -299,7 +299,7 @@ export const todosArray = [
     method: "GET",
     label: "Get all todos",
     href: "/api/todos",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/todos')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -309,7 +309,7 @@ export const todosArray = [
     method: "GET",
     label: "Get a single todo",
     href: "/api/todos/1",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/todos/1')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -319,7 +319,7 @@ export const todosArray = [
     method: "GET",
     label: "Limit and Skip todos",
     href: "/api/todos?limit=10&skip=5",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/todos?limit=10&skip=5')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -329,7 +329,7 @@ export const todosArray = [
     method: "POST",
     label: "Add a todo",
     href: "/api/todos",
-    className: "bg-green-500 text-white font-medium px-4 rounded mr-2",
+    className: "post",
     code: `fetch('//jsonifyreact.vercel.app/api/todos', {
   method: 'POST',
   // Add body data here
@@ -342,7 +342,7 @@ export const todosArray = [
     method: "PUT",
     label: "Update a todo",
     href: "/api/todos/1",
-    className: "bg-orange-500 text-white font-medium px-4 rounded mr-2",
+    className: "put",
     code: `fetch('//jsonifyreact.vercel.app/api/todos/1', {
   method: 'PUT',
   // Add body data here
@@ -354,7 +354,7 @@ export const todosArray = [
     id: "delete-a-todo",
     method: "DELETE",
     label: "Delete a todo",
-    className: "bg-red-600 text-white font-medium px-4 rounded mr-2",
+    className: "delete",
     href: "/api/todos/1",
     code: `fetch('//jsonifyreact.vercel.app/api/todos/1', {
   method: 'DELETE'
@@ -371,7 +371,7 @@ export const postsArray = [
     method: "GET",
     label: "Get all posts",
     href: "/api/posts",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/posts')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -381,7 +381,7 @@ export const postsArray = [
     method: "GET",
     label: "Get a single post",
     href: "/api/posts/1",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/posts/1')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -391,7 +391,7 @@ export const postsArray = [
     method: "GET",
     label: "Search posts",
     href: "/api/posts/search?q=mother",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/posts/search?q=mother')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -401,7 +401,7 @@ export const postsArray = [
     method: "GET",
     label: "Limit and Skip posts",
     href: "/api/posts?limit=10&skip=5",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/posts?limit=10&skip=5')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -411,7 +411,7 @@ export const postsArray = [
     method: "POST",
     label: "Add a post",
     href: "/api/posts",
-    className: "bg-green-500 text-white font-medium px-4 rounded mr-2",
+    className: "post",
     code: `fetch('//jsonifyreact.vercel.app/api/posts', {
   method: 'POST',
   // Add body data here
@@ -424,7 +424,7 @@ export const postsArray = [
     method: "PUT",
     label: "Update a post",
     href: "/api/posts/1",
-    className: "bg-orange-500 text-white font-medium px-4 rounded mr-2",
+    className: "put",
     code: `fetch('//jsonifyreact.vercel.app/api/posts/1', {
   method: 'PUT',
   // Add body data here
@@ -436,7 +436,7 @@ export const postsArray = [
     id: "delete-a-post",
     method: "DELETE",
     label: "Delete a post",
-    className: "bg-red-600 text-white font-medium px-4 rounded mr-2",
+    className: "delete",
     href: "/api/posts/1",
     code: `fetch('//jsonifyreact.vercel.app/api/posts/1', {
   method: 'DELETE'
@@ -453,7 +453,7 @@ export const productsArray = [
     method: "GET",
     label: "Get all products",
     href: "/api/products",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/products')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -463,7 +463,7 @@ export const productsArray = [
     method: "GET",
     label: "Get a single product",
     href: "/api/products/1",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/products/1')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -473,7 +473,7 @@ export const productsArray = [
     method: "GET",
     label: "Search products",
     href: "/api/products/search?q=Laptop",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/products/search?q=Laptop')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -483,7 +483,7 @@ export const productsArray = [
     method: "GET",
     label: "Limit and Skip products",
     href: "/api/products?limit=10&skip=5",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/products?limit=10&skip=5')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -493,7 +493,7 @@ export const productsArray = [
     method: "POST",
     label: "Add a product",
     href: "/api/products",
-    className: "bg-green-500 text-white font-medium px-4 rounded mr-2",
+    className: "post",
     code: `fetch('//jsonifyreact.vercel.app/api/products', {
   method: 'POST',
   // Add body data here
@@ -506,7 +506,7 @@ export const productsArray = [
     method: "PUT",
     label: "Update a product",
     href: "/api/products/1",
-    className: "bg-orange-500 text-white font-medium px-4 rounded mr-2",
+    className: "put",
     code: `fetch('//jsonifyreact.vercel.app/api/products/1', {
   method: 'PUT',
   // Add body data here
@@ -518,7 +518,7 @@ export const productsArray = [
     id: "delete-a-product",
     method: "DELETE",
     label: "Delete a product",
-    className: "bg-red-600 text-white font-medium px-4 rounded mr-2",
+    className: "delete",
     href: "/api/products/1",
     code: `fetch('//jsonifyreact.vercel.app/api/products/1', {
   method: 'DELETE'
@@ -535,7 +535,7 @@ export const quotesArray = [
     method: "GET",
     label: "Get all quotes",
     href: "/api/quotes",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/quotes')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -545,7 +545,7 @@ export const quotesArray = [
     method: "GET",
     label: "Get a single quote",
     href: "/api/quotes/1",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/quotes/1')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -556,7 +556,7 @@ export const quotesArray = [
     method: "GET",
     label: "Limit and Skip quotes",
     href: "/api/quotes?limit=10&skip=5",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/quotes?limit=10&skip=5')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -566,7 +566,7 @@ export const quotesArray = [
     method: "POST",
     label: "Add a quote",
     href: "/api/quotes",
-    className: "bg-green-500 text-white font-medium px-4 rounded mr-2",
+    className: "post",
     code: `fetch('//jsonifyreact.vercel.app/api/quotes', {
   method: 'POST',
   // Add body data here
@@ -579,7 +579,7 @@ export const quotesArray = [
     method: "PUT",
     label: "Update a quote",
     href: "/api/quotes/1",
-    className: "bg-orange-500 text-white font-medium px-4 rounded mr-2",
+    className: "put",
     code: `fetch('//jsonifyreact.vercel.app/api/quotes/1', {
   method: 'PUT',
   // Add body data here
@@ -591,7 +591,7 @@ export const quotesArray = [
     id: "delete-a-quote",
     method: "DELETE",
     label: "Delete a quote",
-    className: "bg-red-600 text-white font-medium px-4 rounded mr-2",
+    className: "delete",
     href: "/api/quotes/1",
     code: `fetch('//jsonifyreact.vercel.app/api/quotes/1', {
   method: 'DELETE'
@@ -609,7 +609,7 @@ export const recipesArray = [
     method: "GET",
     label: "Get all Recipes",
     href: "/api/recipes",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/recipes')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -619,7 +619,7 @@ export const recipesArray = [
     method: "GET",
     label: "Get a single Recipe",
     href: "/api/recipes/1",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/recipes/1')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -629,7 +629,7 @@ export const recipesArray = [
     method: "GET",
     label: "Search Recipes",
     href: "/api/recipes/search?q=Pasta",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/recipes/search?q=Pasta')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -639,7 +639,7 @@ export const recipesArray = [
     method: "GET",
     label: "Limit and Skip Recipes",
     href: "/api/recipes?limit=10&skip=5",
-    className: "bg-blue-400 text-white font-medium px-4 rounded mr-2",
+    className: "get",
     code: `fetch('//jsonifyreact.vercel.app/api/recipes?limit=10&skip=5')
   .then((res) => res.json())
   .then((data) => console.log(data))`,
@@ -649,7 +649,7 @@ export const recipesArray = [
     method: "POST",
     label: "Add a Recipe",
     href: "/api/recipes",
-    className: "bg-green-500 text-white font-medium px-4 rounded mr-2",
+    className: "post",
     code: `fetch('//jsonifyreact.vercel.app/api/recipes', {
   method: 'POST',
   // Add body data here
@@ -662,7 +662,7 @@ export const recipesArray = [
     method: "PUT",
     label: "Update a Recipe",
     href: "/api/recipes/1",
-    className: "bg-orange-500 text-white font-medium px-4 rounded mr-2",
+    className: "put",
     code: `fetch('//jsonifyreact.vercel.app/api/recipes/1', {
   method: 'PUT',
   // Add body data here
@@ -674,7 +674,7 @@ export const recipesArray = [
     id: "delete-a-recipe",
     method: "DELETE",
     label: "Delete a Recipe",
-    className: "bg-red-600 text-white font-medium px-4 rounded mr-2",
+    className: "delete",
     href: "/api/recipes/1",
     code: `fetch('//jsonifyreact.vercel.app/api/recipes/1', {
   method: 'DELETE'
