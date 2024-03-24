@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 };
 const Docs = () => {
   return (
-    <div className="mb-10">
+    <div className="mb-10 ">
       <div className="mb-4">
         <h1 className="text-3xl font-semibold">How to use it</h1>
-        <p>
+        <p className="text-sm mt-1">
           JSONify React can be used with any type of front end project that
           needs products, recipes, users, todos or any dummy data in JSON
           format. You can use examples below to check how JSONify React works.
@@ -37,20 +37,23 @@ const Docs = () => {
             <Link href={"/api/products"}> Try it now</Link>
           </button>
         </div>
+
         <div className="text-center">
-          <h1 className="text-3xl font-semibold mb-1">Resources</h1>
+          <h1 className="text-3xl font-semibold mb-1 mt-6 lg:mt-0">
+            Resources
+          </h1>
           <p>JSONify React comes with different sets of common resources:</p>
         </div>
 
         <div className="mt-5">
           <div className="mb-6">
-            <h1 className="text-xl font-bold mb-1">Resources</h1>
+            <h1 className="text-2xl font-bold mb-1">Resources</h1>
             <p className="text-sm">
               Following resources are available which you can access via our
               REST API.
             </p>
           </div>
-          <ul className="space-y-2 mb-6 w-96">
+          <ul className="space-y-2 mb-6 lg:w-96">
             {dataArray2.map((item) => (
               <li className="flex items-start justify-start" key={item.id}>
                 <Link
@@ -74,7 +77,7 @@ const Docs = () => {
 
         <div className="mt-6 ">
           <div className="mb-6">
-            <h1 className="text-xl font-bold mb-1">Routes</h1>
+            <h1 className="text-2xl font-bold mb-1">Routes</h1>
             <p className="text-sm">
               All HTTP methods are supported. You can use http or https for your
               requests.
@@ -82,8 +85,11 @@ const Docs = () => {
           </div>
           <ul className="space-y-2 mb-2 w-full">
             {dataArray.map((item) => (
-              <li className="flex items-start justify-start" key={item.id}>
-                <span className="w-28">{item.method}</span>
+              <li
+                className="flex items-start justify-start flex-wrap gap-2 border-2 p-2 rounded lg:border-0 lg:p-0"
+                key={item.id}
+              >
+                <span className="w-28 font-bold">{item.method}</span>
                 <Link
                   href={item.href}
                   className=" text-green-600 text-left w-80 hover:underline hover:text-green-500"
@@ -96,8 +102,11 @@ const Docs = () => {
           </ul>
           <ul className="space-y-2 mb-6 w-full">
             {dataArray3.map((item) => (
-              <li className="flex items-start justify-start" key={item.id}>
-                <span className="w-28">{item.method}</span>
+              <li
+                className="flex items-start justify-start flex-wrap gap-2 border-2 p-2 rounded lg:border-0 lg:p-0"
+                key={item.id}
+              >
+                <span className="w-28 font-bold">{item.method}</span>
                 <span className="w-80"> {item.label}</span>
                 <span className="">{item.description}</span>
               </li>

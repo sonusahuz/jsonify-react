@@ -1,5 +1,5 @@
 import { postsArray } from "@/utils";
-import { SkipBack, StepForward } from "lucide-react";
+import { StepBack, StepForward } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
@@ -26,7 +26,7 @@ const Posts = () => {
               <span className={item.className}>{item.method}</span>
               {item.label}
             </h1>
-            <pre className="bg-black mt-2 text-xs p-4 rounded text-gray-400">
+            <pre className="bg-black mt-2 text-xs p-4 rounded text-gray-400 overflow-x-scroll sm:overflow-visible">
               {item.code}
             </pre>
             {(item.id === "get-all-posts" ||
@@ -46,7 +46,7 @@ const Posts = () => {
           href={"/todos"}
           className="flex items-center justify-center gap-2 px-2 py-2 w-28 rounded bg-black text-white"
         >
-          <SkipBack size={20} />
+          <StepBack size={20} />
           <span>Todos</span>
         </Link>
         <Link

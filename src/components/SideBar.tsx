@@ -4,10 +4,10 @@ import React from "react";
 
 const SideBar = () => {
   return (
-    <div className="space-y-6 overflow-scroll h-screen w-56 fixed">
+    <div className="space-y-6 overflow-scroll h-screen w-56 fixed ">
       {sidebarData.map((item) => (
         <div key={item.id}>
-          <h1 className="text-xl font-medium">
+          <h1 className="text-xl font-bold">
             <Link
               href={item.href}
               className=" hover:text-green-500 hover:underline"
