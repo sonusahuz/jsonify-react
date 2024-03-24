@@ -3,7 +3,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <div className="flex items-center justify-center h-[99vh]">
+    <div className="flex items-center justify-center lg:h-[99vh] h-[76vh]">
       <div className=" text-center mx-auto lg:mx-0">
         <div className=" space-y-4 text-center">
           <h1 className="lg:text-7xl text-5xl font-semibold">JSONify React</h1>

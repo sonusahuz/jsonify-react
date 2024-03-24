@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 };
 const Docs = () => {
   return (
-    <div className="mb-10 ">
+    <div className="mb-10">
       <div className="mb-4">
         <h1 className="text-3xl font-semibold">How to use it</h1>
         <p className="text-sm mt-1">
