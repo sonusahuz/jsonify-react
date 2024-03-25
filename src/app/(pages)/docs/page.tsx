@@ -68,7 +68,7 @@ const Docs = () => {
           </ul>
           <div className="mt-2">
             <p className="text-sm">
-              <strong>Note: </strong> by default you will get 30 results and the
+              <strong>Note: </strong> by default you will get 50 results and the
               total count, you can pass skip & limit query string to get more
               results. For example: /api/posts?skip=5&limit=10
             </p>

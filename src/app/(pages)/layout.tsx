@@ -7,7 +7,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <div className="lg:block hidden lg:mt-14">
         <SideBar />
       </div>
-      <div className="ml-0 lg:ml-60 w-full lg:mt-14">{children}</div>
+      <div className="ml-0 lg:ml-56 w-full lg:mt-14">{children}</div>
     </div>
   );
 };
