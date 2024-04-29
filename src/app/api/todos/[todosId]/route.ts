@@ -48,7 +48,7 @@ export const PUT = async (
     if (index !== -1) {
       todos[index] = { ...todos[index], ...body, id: Number(todosId) };
       return NextResponse.json(
-        { success: true, post: todos[index] },
+        { success: true, todo: todos[index] },
         { status: 200 }
       );
     } else {

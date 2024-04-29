@@ -19,7 +19,7 @@ const Recipes = () => {
       </div>
       <hr />
       <div>
-        <h1 className="text-2xl font-semibold mt-4">Users</h1>
+        <h1 className="text-2xl font-semibold mt-4">Recipes</h1>
         {recipesArray.map((item) => (
           <div className="mt-4 mb-12" id={item.id} key={item.id}>
             <h1 className="text-xl font-bold">

@@ -46,7 +46,7 @@ export const PUT = async (
     if (index !== -1) {
       quotes[index] = { ...quotes[index], ...body, id: Number(quoteId) };
       return NextResponse.json(
-        { success: true, post: quotes[index] },
+        { success: true, quote: quotes[index] },
         { status: 200 }
       );
     } else {

@@ -20,7 +20,7 @@ export const GET = (req: NextRequest, res: NextResponse) => {
       resultUser = resultUser.slice(0, limit);
     }
 
-    return NextResponse.json({ products: resultUser }, { status: 200 });
+    return NextResponse.json({ users: resultUser }, { status: 200 });
   } catch (error) {
     return NextResponse.json({ error: error }, { status: 500 });
   }

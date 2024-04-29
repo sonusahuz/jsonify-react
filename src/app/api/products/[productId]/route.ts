@@ -46,7 +46,7 @@ export const PUT = async (
     if (index !== -1) {
       products[index] = { ...products[index], ...body, id: Number(productId) };
       return NextResponse.json(
-        { success: true, post: products[index] },
+        { success: true, product: products[index] },
         { status: 200 }
       );
     } else {
