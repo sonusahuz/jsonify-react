@@ -1,4 +1,3 @@
-import { Menu } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -18,6 +17,9 @@ const Header = ({ children }: { children: React.ReactNode }) => {
             </li>
             <li>
               <Link href={"/docs"}>Docs</Link>
+            </li>
+            <li>
+              <Link href={"/generate-json"}> Generate JSON</Link>
             </li>
             <li>
               <a

@@ -4,11 +4,6 @@ import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
-export const metadata: Metadata = {
-  title: "Docs",
-  description:
-    "Get dummy/fake JSON data to use as placeholder in development or in prototype testing",
-};
 const Docs = () => {
   return (
     <div className="mb-10">
